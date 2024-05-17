@@ -13,7 +13,7 @@ import '../workflow/settings.dart';
 // final List<String> days = ['yesterday','today','tomorrow','#insert day","#insert day"]
 //of course, this is just rough overview of how to do it.
 
-const key = "";
+const key = "openweathermap api key goes over here"; 
 
 //this is the weather forecast widget
 class WeatherWidget extends StatefulWidget {

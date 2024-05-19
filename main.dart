@@ -10,7 +10,7 @@ import 'package:geolocator/geolocator.dart';
 //import './screens/astroguide.dart';
 
 //import 'package:google_fonts/google_fonts.dart';
-const key = "702e0908676ba00cc2f56b1efa6c67c8";
+const key =""; //enter your openweathermap api key
 final WeatherFactory wf = WeatherFactory(key);
 
 void main() async {

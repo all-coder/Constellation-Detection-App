@@ -26,7 +26,7 @@ const AboutModel dummyData = AboutModel(
   shortDesc:
       "I am currently a mechanical undergrad at Indian Institude of Technology,Tirupati. I am  quite passionate about the intricate world of computers and networks",
   name: "Niranjan M",
-  emailId: "me23b036@iittp.ac.in"
+  emailId: ""
 );
 final Map<String, String> backgroundImage = {
   //no haze - have to load asset

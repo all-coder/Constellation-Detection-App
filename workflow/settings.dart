@@ -1,13 +1,3 @@
-//ToDo
-//need to work on reminisce
-//need to fine tune the app further with animations(not a priority)
-//setup a proper backend(preferably using firebase storage) - done
-//need to properly extract exif data from the image - ongoing
-//probably extract all info from the image's file name
-//needs three things - location,orginaldate,originaltime
-//preferably use a another symbol except '/', could cause some issues
-//like this  - "${androidDeviceId}/${location}/${originaldatetime}.(jpeg or png or heic)"
-//need to work on the drawer too, more finetuning required.
 import 'package:exif/exif.dart';
 import 'dart:io';
 import 'package:http/http.dart' as http;
@@ -17,8 +7,6 @@ import 'package:geolocator/geolocator.dart';
 import '../models/aboutus_model.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-//import 'package:flutter/foundation.dart';
-//list of backgroundImages(weatherforecast widget)
 
 const AboutModel dummyData = AboutModel(
   imgPath: "lib/assets/images/image3.jpg",
@@ -48,9 +36,6 @@ Future getExif(File image) async {
   for (final i in data.entries) {
     print("${i.key} and ${i.value}");
   }
-  // StarTileModel? file;
-  // file!.time = data['DateTimeOrginal'].toString() ?? "Nothing here";
-  // print(file.time);
 }
 
 Future<ImageProvider> fetchImage(String url) async {
@@ -64,8 +49,6 @@ Future<ImageProvider> fetchImage(String url) async {
 }
 
 Future<Weather> loadWeather(WeatherFactory wf, double lat, double long) async {
-  // Await the API call to ensure weather data is obtained
-  // Weather weather = await wf.currentWeatherByCityName("Tirupati");
   Weather weather = await wf.currentWeatherByLocation(lat, long);
   return weather;
 }

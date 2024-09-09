@@ -1,6 +1,6 @@
 # Constellation Detection App
 
-![Star Recon](https://github.com/all-coder/Star-Recognition-App/assets/65776242/769948c9-3dfc-42f5-af62-b702f37b1d3d)
+![constellation-detection](https://github.com/user-attachments/assets/b6513530-c13f-47e1-9c22-a1396acc4480)
 
 ## Overview
 
